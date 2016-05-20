@@ -34,7 +34,7 @@ angular.module('olympics', ["ui.router"])
                                 ]
                             };
                             resolve({data: sport});
-                        })
+                        });
                     }
                 },
                 controller: function (sportService) {
@@ -42,5 +42,4 @@ angular.module('olympics', ["ui.router"])
                 },
                 controllerAs: 'sportCtrl'
             })
-
     })
